@@ -34,4 +34,4 @@ And that is all this extenion do.
 
 The keyboard shortcut `Alt-o` moves the selected messages to the folder `okmail`
 
-The keyboard shortcut `Alt-b` marks the message as spam and moves it to the folder `badmail`
+The keyboard shortcut `Alt-j` marks the message as spam and moves it to the folder `badmail`

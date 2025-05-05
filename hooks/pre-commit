@@ -1,0 +1,25 @@
+#!/bin/bash
+set -e
+
+MANIFEST="manifest.json"
+XPI_NAME="olen-tb-shortcuts.xpi"
+
+# Extract the current version from manifest.json
+CURRENT_VERSION=$(jq -r '.version' "$MANIFEST")
+
+# Split version into major.minor.patch
+IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+
+# Bump patch version
+NEW_VERSION="$MAJOR.$MINOR.$((PATCH + 1))"
+
+# Update manifest.json
+jq --arg new_version "$NEW_VERSION" '.version = $new_version' "$MANIFEST" > manifest.tmp && mv manifest.tmp "$MANIFEST"
+
+echo "Updated version: $CURRENT_VERSION → $NEW_VERSION"
+
+# Create the XPI (zip the contents excluding .git and the .xpi file itself)
+zip -r "$XPI_NAME" . -x "*.git*" -x README.md "$XPI_NAME"
+
+echo "Created $XPI_NAME"
+

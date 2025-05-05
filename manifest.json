@@ -1,19 +1,21 @@
 {
   "manifest_version": 2,
   "name": "Thunderbird Key Shortcuts",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "browser_specific_settings": {
     "gecko": {
       "id": "tb-shortcuts@olen.net"
     }
   },
   "background": {
-    "scripts": [ "background.js" ]
+    "scripts": [
+      "background.js"
+    ]
   },
   "commands": {
     "move-to-badmail": {
       "suggested_key": {
-        "default": "Alt+B"
+        "default": "Alt+J"
       },
       "description": "Mark as junk and move to badmail"
     },
