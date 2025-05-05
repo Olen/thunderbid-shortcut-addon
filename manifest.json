@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
   "name": "Thunderbird Key Shortcuts",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "browser_specific_settings": {
     "gecko": {
-      "id": "tb-shortcuts@olen.net"
+      "id": "tb-shortcuts@olen.net",
+      "update_url": "https://github.com/Olen/thunderbid-shortcut-addon/raw/refs/heads/main/olen-tb-shortcuts.xpi"
     }
   },
   "background": {
