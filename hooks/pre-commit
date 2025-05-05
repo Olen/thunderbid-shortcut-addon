@@ -29,4 +29,5 @@ zip -r "$XPI_NAME" . -x "*.git*" -x README.md "$XPI_NAME"
 echo "Created $XPI_NAME"
 
 git add $MANIFEST
+git add $UPDATES_FILE
 git add $XPI_NAME
