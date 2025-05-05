@@ -3,7 +3,7 @@
     "tb-shortcuts@olen.net": {
       "updates": [
         {
-          "version": "1.1.14",
+          "version": "1.1.15",
           "update_link": "https://github.com/Olen/thunderbid-shortcut-addon/raw/refs/heads/main/olen-tb-shortcuts.xpi"
         }
       ]
