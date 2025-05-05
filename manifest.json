@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Thunderbird Key Shortcuts",
+  "version": "1.0.5",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tb-shortcuts@olen.net"
+    }
+  },
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "commands": {
+    "move-to-badmail": {
+      "suggested_key": {
+        "default": "Alt+B"
+      },
+      "description": "Mark as junk and move to badmail"
+    },
+    "move-to-okmail": {
+      "suggested_key": {
+        "default": "Alt+O"
+      },
+      "description": "Mark as not junk and move to okmail"
+    }
+  },
+  "permissions": [
+    "accountsRead",
+    "messagesRead",
+    "messagesMove",
+    "messagesUpdate"
+  ]
+}
