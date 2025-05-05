@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Thunderbird Key Shortcuts",
-  "version": "1.1.11",
+  "name": "Olens Thunderbird Key Shortcuts",
+  "version": "1.1.12",
   "browser_specific_settings": {
     "gecko": {
       "id": "tb-shortcuts@olen.net",
@@ -26,6 +26,11 @@
       },
       "description": "Mark as not junk and move to okmail"
     }
+  },
+  "description": "Common shortcuts for Thunderbird",
+  "developer": {
+    "author": "Olen",
+    "homepage_url": "https://github.com/Olen/thunderbid-shortcut-addon/"
   },
   "permissions": [
     "accountsRead",
