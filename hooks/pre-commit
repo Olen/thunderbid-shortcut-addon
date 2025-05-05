@@ -20,7 +20,7 @@ jq --arg new_version "$NEW_VERSION" '.version = $new_version' "$MANIFEST" > mani
 echo "Updated version: $CURRENT_VERSION → $NEW_VERSION"
 
 echo "Updating version in $UPDATES_FILE to $NEW_VERSION"
-jq --arg new_version "$NEW_VERSION" '.addons.updates[0].version = $new_version' "$UPDATES_FILE" > temp_updates.json && mv temp_updates.json "$UPDATES_FILE"
+jq --arg new_version "$NEW_VERSION" '.addons.tb-shortcuts@olen.net.updates[0].version = $new_version' "$UPDATES_FILE" > temp_updates.json && mv temp_updates.json "$UPDATES_FILE"
 
 
 # Create the XPI (zip the contents excluding .git and the .xpi file itself)
